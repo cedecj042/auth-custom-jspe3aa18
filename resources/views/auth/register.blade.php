@@ -15,7 +15,7 @@
             <input type="email" name="email" class="auth-textbox">
             <input type="checkbox" name="generate_email">Generate
             @error('email')
-                <span>{{ $message }}</span>
+                <p>{{ $message }}</p>
             @enderror
         </div>
         <div>

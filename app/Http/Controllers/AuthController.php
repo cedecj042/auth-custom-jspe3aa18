@@ -16,8 +16,8 @@ class AuthController extends Controller
 
     public function register(Request $request){
         if($request->generate_email || ($request->email && $request->generate_email)){
-            $email= fake()->unique()->safeEmail();
-        } else{
+            $email = fake()->unique()->safeEmail();
+        } else {
             $email = $request->email;
         }
     
